@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mastering JavaScript Fundamentals</h1>
+        <p>Explore functions, loops, DOM manipulation, and more</p>
+    </header>
+    
+    <div class="intro">
+        <p>This assignment demonstrates core JavaScript concepts through interactive examples. Each section includes explanations and live code examples.</p>
+    </div>
+    
+    <div class="part">
+        <h2><span class="emoji">🎯</span>Part 1: JavaScript Basics</h2>
+        <p>Variables, data types, operators, and conditionals</p>
+        
+        <div class="interactive-demo">
+            <h3>Temperature Check</h3>
+            <p>Enter a temperature to see if it's hot, moderate, or cold:</p>
+            <input type="number" id="tempInput" placeholder="Enter temperature">
+            <button onclick="checkTemperature()">Check Temperature</button>
+            <div class="output" id="tempOutput"></div>
+        </div>
+    </div>
+    
+    <div class="part">
+        <h2><span class="emoji">❤️</span>Part 2: JavaScript Functions</h2>
+        <p>Reusable blocks of code for common tasks</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Calculate Discount</h3>
+                <input type="number" id="priceInput" placeholder="Original price">
+                <input type="number" id="discountInput" placeholder="Discount %">
+                <button onclick="calculateDiscount()">Calculate</button>
+                <div class="output" id="discountOutput"></div>
+            </div>
+            
+            <div class="card">
+                <h3>Format Name</h3>
+                <input type="text" id="firstNameInput" placeholder="First name">
+                <input type="text" id="lastNameInput" placeholder="Last name">
+                <button onclick="formatName()">Format Name</button>
+                <div class="output" id="nameOutput"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="part">
+        <h2><span class="emoji">🔁</span>Part 3: JavaScript Loops</h2>
+        <p>Repetition with for, while, and forEach loops</p>
+        
+        <div class="interactive-demo">
+            <h3>Multiplication Table</h3>
+            <input type="number" id="multiplierInput" placeholder="Enter a number" value="5">
+            <button onclick="generateTable()">Generate Table</button>
+            <div class="output" id="tableOutput"></div>
+        </div>
+        
+        <div class="interactive-demo">
+            <h3>Countdown Timer</h3>
+            <input type="number" id="countdownInput" placeholder="Seconds" value="10">
+            <button onclick="startCountdown()">Start Countdown</button>
+            <div class="output" id="countdownOutput"></div>
+        </div>
+    </div>
+    
+    <div class="part">
+        <h2><span class="emoji">🌐</span>Part 4: DOM Manipulation</h2>
+        <p>Making web pages interactive with JavaScript</p>
+        
+        <div class="interactive-demo">
+            <h3>Theme Switcher</h3>
+            <button onclick="switchTheme('light')">Light Theme</button>
+            <button onclick="switchTheme('dark')">Dark Theme</button>
+            <button onclick="switchTheme('blue')">Blue Theme</button>
+        </div>
+        
+        <div class="interactive-demo">
+            <h3>Dynamic List</h3>
+            <input type="text" id="listItemInput" placeholder="Enter item">
+            <button onclick="addListItem()">Add to List</button>
+            <button onclick="clearList()">Clear List</button>
+            <ul id="dynamicList"></ul>
+        </div>
+        
+        <div class="interactive-demo">
+            <h3>Element Style Modifier</h3>
+            <p>Click to modify the box below:</p>
+            <div id="styleBox">
+                Style Me!
+            </div>
+            <button onclick="changeColor()">Change Color</button>
+            <button onclick="toggleVisibility()">Toggle Visibility</button>
+            <button onclick="rotateElement()">Rotate Element</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>JavaScript Fundamentals Assignment &bull; Created with pure JavaScript, HTML, and CSS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
